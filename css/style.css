@@ -1,16 +1,86 @@
+/* general styles */
 
-h1{
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+}
+
+
+/* Header styles */
+
+header {
   text-align: center;
+  padding: 30px;
+  font-family: 'Lato', sans-serif;
+  width:70%;
+  background: url(../assets/map-3483539_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 40px;
+  color: black;
 }
-#selectColumns {
-  overflow: auto;
-  border: 2px solid red;
-  flex :1;
-}
+
+
+
+/* inpout choices  */
 
 #choices{
   display: flex;
   justify-content:space-around;
+  width:70%;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+#choicesWrapper {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  border: none;
+}
+
+h3 {
+  color: #1919ff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+}
+
+button > i {
+  color:black;
+}
+
+/* table container */
+
+#tableContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  background: whitesmoke;
+}
+
+#countryWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: silver;
+  margin-bottom: 10px;
 }
 
 #countryDetails{
@@ -18,27 +88,9 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  width: 30%;
-}
-
-#info{
-  font-size: 17px;
-}
-
-#countryWrapper{
-  display: flex;
-  justify-content: center;
-  background: grey;
-  border:  1px solid red;
-  margin-bottom: 10px;
-}
-
-#tableContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 70%;
-  margin: 0 auto;  
+  width: 50%;
+  margin-bottom: 0;
+  font-size: 20px;
 }
 
 img {
@@ -46,6 +98,23 @@ img {
   height: 100px;
 }
 
-p {
-  font-size: 25px;
+span {
+  font-weight: bold;
+  
+}
+
+#search {
+  width :300px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: darkslategrey;
+  line-height: 25px;
+  width: 100%;
+  border: none;
+}
+
+#regions{
+  width: 60%;
+  font-size: 16px;
+  color: gray;
 }

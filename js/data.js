@@ -25,10 +25,10 @@ fetch(url)
     // Examine the text in the response
     response.json().then(function(data) {
       worldCountries = data;
-      keys = Object.keys(worldCountries[0]); //   
+      keys = Object.keys(worldCountries[0]); // 
+      listRegions();  
       result = worldCountries;
-      document.querySelector('#tableContainer').innerHTML= displayCountry(worldCountries,slectedColumns);     
-     
+      document.querySelector('#tableContainer').innerHTML= displayCountry(result,slectedColumns);    
     });
   }
 )
