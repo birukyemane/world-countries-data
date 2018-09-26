@@ -6,9 +6,80 @@
     <title>World countries data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <script src="./js/main.js"></script>
 </head>
 <body>
     <h1>World Countries</h1>
+    <div id="choices">           
+        <fieldset>
+            <legend>Choose Additional columns</legend>
+        
+            <div>
+                <input type="checkbox" id="currencies" name="additionalCoulumn"
+                        value="Currency" onChange="selectColumn('currencies')"/>
+                <label for="population">Currency</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="languages" name="additionalCoulumn"
+                        value="languages"  onChange="selectColumn('languages')"/>
+                <label for="languages">languages</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="language" name="additionalCoulumn"
+                        value="language" />
+                <label for="language">Area</label>
+            </div>           
+
+        </fieldset>
+        <fieldset>
+            <legend>Sort by columns</legend>
+        
+            <div>
+                <button onclick="sortString('name','A')">Asc</button>
+                <button  onclick="sortString('name','D')">Dsc</button>
+                <label for="Name">Name</label>
+            </div>
+        
+            <div>
+                <button onclick="sortString('capital','A')">Asc</button>
+                <button  onclick="sortString('capital','D')">Dsc</button>
+                <label for="capital">Capital</label>
+            </div>
+        
+            <div>
+                <button onclick="sortString('region','A')">Asc</button>
+                <button  onclick="sortString('region','D')">Dsc</button>
+                <label for="Name">Region</label>
+            </div>  
+            <div>
+                <button onclick="sortPopulation('A')">Asc</button>
+                <button  onclick="sortPopulation('D')">Dsc</button>
+                <label for="Name">Population</label>
+            </div>          
+
+        </fieldset>
+            <!--
+                 <div id="addFilters">        
+                    <h1>Add filters</h1>
+                    <div id="addFilterInputs">
+                    <select name="filerKeys" id="filerKeys" value="name"></select> 
+                    <select name="operationOPtions" id="operationOPtions"></select> 
+                    </div>
+                    <button>Add</button>
+
+                    <div id="filterAdded"></div>              
+                </div> 
+            -->
+               
+    </div>
+   
+
+    <div id="tableContainer"></div>
+
+    <script src="./js/functions.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/table.js"></script>    
+    <script src="./js/main.js"></script>
 </body>
 </html>

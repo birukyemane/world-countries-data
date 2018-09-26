@@ -1,0 +1,51 @@
+
+h1{
+  text-align: center;
+}
+#selectColumns {
+  overflow: auto;
+  border: 2px solid red;
+  flex :1;
+}
+
+#choices{
+  display: flex;
+  justify-content:space-around;
+}
+
+#countryDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 30%;
+}
+
+#info{
+  font-size: 17px;
+}
+
+#countryWrapper{
+  display: flex;
+  justify-content: center;
+  background: grey;
+  border:  1px solid red;
+  margin-bottom: 10px;
+}
+
+#tableContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;  
+}
+
+img {
+  width:150px;
+  height: 100px;
+}
+
+p {
+  font-size: 25px;
+}
