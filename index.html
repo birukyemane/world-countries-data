@@ -37,9 +37,8 @@
         </div> 
         <div id="choicesWrapper">
             <h3>Search</h3>           
-            <input type="text" id="search" name="searchOptions" value="" oninput="search()" placeholder="search name or capital city"/>                        
-            <label for="regions">By region</label> 
-            <select name="regions" id="regions"></select>   
+            <input type="text" id="search" name="searchOptions" value="" oninput="search()" placeholder="name or capital"/>                        
+            <select name="regions" id="regions" onchange="search()"></select> 
         </div>             
         
         <div id="choicesWrapper">

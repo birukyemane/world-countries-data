@@ -13,7 +13,6 @@ body{
   align-items: center;
 }
 
-
 /* Header styles */
 
 header {
@@ -31,8 +30,6 @@ header {
   color: black;
 }
 
-
-
 /* inpout choices  */
 
 #choices{
@@ -47,13 +44,14 @@ header {
 #choicesWrapper {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  border: none;
+  flex-basis: 33%;
 }
 
 h3 {
   color: #1919ff;
   font-size: 18px;
   margin-bottom: 10px;
+  width:100%;  
 }
 
 button{
@@ -63,6 +61,20 @@ button{
 
 button > i {
   color:black;
+}
+
+#search {
+  width :60%;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: darkslategrey;
+  line-height: 25px;
+}
+
+#regions{
+  width: 60%;
+  font-size: 16px;
+  color: gray;
 }
 
 /* table container */
@@ -99,22 +111,5 @@ img {
 }
 
 span {
-  font-weight: bold;
-  
-}
-
-#search {
-  width :300px;
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: darkslategrey;
-  line-height: 25px;
-  width: 100%;
-  border: none;
-}
-
-#regions{
-  width: 60%;
-  font-size: 16px;
-  color: gray;
+  font-weight: bold;  
 }
